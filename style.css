@@ -24,7 +24,7 @@ body {
 
 header {
     min-height: 100vh;
-    background-image: url(main-bg.svg);
+    background-image: url(images/main-bg.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -67,15 +67,16 @@ nav {
 .hero__title {
     color: hsl(262, 96%, 22%);
     width: 40%;
-    font-size: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: clamp(2.8rem, 1.4184rem + 3.283vw, 3.8331rem);
     font-weight: bold;
-    line-height: 1;
+    line-height: 1.3;
 }
 
 .hero__desc {
     color: #888;
     width: 40%;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 0.6548rem + 1.2259vw, 1.2581rem);
     font-weight: 500;
     line-height: 1.3;
 }
@@ -106,8 +107,7 @@ nav {
 
 @media (max-width: 1140px) {
     header {
-        background-color: #777;
-        background-image: url(main-bg-01.jpg);
+        background-image: url(images/main-bg-01.png);
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-position: center;
@@ -116,12 +116,11 @@ nav {
 
     .hero__title {
         width: 100%;
-        color: hsl(210, 70%, 70%);
+        color: rgb(255, 87, 34);
     }
 
     .hero__desc {
-        width: 100%;
-        font-size: 1.2rem;
+        width: 70%;
         font-weight: 700;
         letter-spacing: 1px;
         color: #FFF;
@@ -158,6 +157,7 @@ nav {
     .hero__title,
     .hero__desc {
         text-align: center;
+        width: 100%;
     }
 
     .btn {
